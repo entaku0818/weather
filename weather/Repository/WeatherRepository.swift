@@ -33,7 +33,22 @@ struct WeatherRepository {
     }
 
 
-
+    struct WeatherRequest: APIRequest {
+        typealias Response = Weather
+        let cityId: String
+        var baseURL: URL {
+            return URL(string: "http://weather.livedoor.com")!
+        }
+        var method: HTTPMethod {
+            return .get
+        }
+        var path: String {
+            return "/forecast/webservice/json/v1"
+        }
+        var queryParameters: [String : Any]? {
+            return ["city": cityId]
+        }
+    }
 
 
 }

@@ -34,7 +34,7 @@ class WeatherViewController: UIViewController {
         }
     }
 
-    var cityId:String? = nil
+    var cityId:String!
 
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -44,10 +44,15 @@ class WeatherViewController: UIViewController {
         super.viewDidLoad()
 
 
-        let weatherRepository:WeatherRepository = WeatherRepository()
-        self.weather = weatherRepository.getWeatherData()
+        Session.send(WeatherRepository.WeatherRequest(cityId: cityId)) { result in
+            switch result {
+            case .success(let response):
+                self.weather = response
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
 
-        
 
     }
 
