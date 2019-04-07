@@ -52,7 +52,7 @@ struct ForecastImage:Decodable  {
         case "晴":
             return #imageLiteral(resourceName: "sunny")
         case "雨":
-            return #imageLiteral(resourceName: "sunny")
+            return #imageLiteral(resourceName: "rain")
         default:
             return #imageLiteral(resourceName: "sunny")
         }

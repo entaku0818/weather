@@ -54,7 +54,11 @@ class WeatherAreaViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        
+        let weatherViewController:WeatherViewController = UIStoryboard(name: "WeatherViewController", bundle: nil).instantiateInitialViewController() as! WeatherViewController
+
+        weatherViewController.cityId = self.areas[indexPath.row].id
+
+        self.navigationController?.pushViewController(weatherViewController, animated: true)
 
     }
 
