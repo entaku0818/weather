@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="2Ug-1v-F5X" customClass="WeatherCollectionViewCell" customModule="weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="9Hs-2X-j4z">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="182"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="182" id="rxj-GW-DOX"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="S2p-Of-5cf">
+                        <rect key="frame" x="0.0" y="182" width="180" height="63"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTG-sX-zTl">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="13"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="明日の天気:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8c-cM-Ne8">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="13"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aaaaaaaaaaaaaaaaaaaaaaaaaa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pV1-XP-gGQ">
+                                        <rect key="frame" x="69" y="0.0" width="111" height="13"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFz-ro-hxN">
+                                <rect key="frame" x="0.0" y="25" width="180" height="13"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="最高気温:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ko4-ZY-vsz">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="13"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aaaaaaaaaaaaaaaaaaaa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGV-qq-5rc">
+                                        <rect key="frame" x="56" y="0.0" width="124" height="13"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbQ-X3-EUC">
+                                <rect key="frame" x="0.0" y="50" width="180" height="13"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="最低気温:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAj-gD-x5T">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="13"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5A-mo-ZDm">
+                                        <rect key="frame" x="56" y="0.0" width="124" height="13"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9Hs-2X-j4z" firstAttribute="top" secondItem="2Ug-1v-F5X" secondAttribute="top" id="0lv-Eg-b6A"/>
+                <constraint firstAttribute="trailing" secondItem="9Hs-2X-j4z" secondAttribute="trailing" id="2RZ-YA-ARg"/>
+                <constraint firstAttribute="trailing" secondItem="S2p-Of-5cf" secondAttribute="trailing" id="Rxv-LA-xq6"/>
+                <constraint firstItem="9Hs-2X-j4z" firstAttribute="leading" secondItem="2Ug-1v-F5X" secondAttribute="leading" id="T9D-kb-dE0"/>
+                <constraint firstItem="S2p-Of-5cf" firstAttribute="top" secondItem="9Hs-2X-j4z" secondAttribute="bottom" id="fIa-BO-0xr"/>
+                <constraint firstItem="S2p-Of-5cf" firstAttribute="leading" secondItem="2Ug-1v-F5X" secondAttribute="leading" id="mJR-un-KhT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="gze-mp-FBL"/>
+            <size key="customSize" width="180" height="293"/>
+            <connections>
+                <outlet property="imageView" destination="9Hs-2X-j4z" id="mRk-bk-gCv"/>
+                <outlet property="maxTemperatureLabel" destination="FGV-qq-5rc" id="WII-Gg-7Ck"/>
+                <outlet property="minTemperatureLabel" destination="E5A-mo-ZDm" id="UvO-75-QOg"/>
+                <outlet property="titleLabel" destination="pV1-XP-gGQ" id="C9d-37-zbe"/>
+            </connections>
+            <point key="canvasLocation" x="310.39999999999998" y="248.27586206896552"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sunny" width="714" height="713"/>
+    </resources>
+</document>
